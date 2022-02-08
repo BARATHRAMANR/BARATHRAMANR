@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="GET-api-technicalskills-id" path="/api/studentsDetails/{id}" id="4bb164b4-4270-4cf7-9e85-afa11333729d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4bb164b4-4270-4cf7-9e85-afa11333729dfileName">GET-api-technicalskills-id</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>id</con:name>
+      <con:value>935122</con:value>
+      <con:style>TEMPLATE</con:style>
+      <con:default>935122</con:default>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Method 1" id="27ed0e85-0949-4099-a32a-8426b669402a" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Get per detail" id="95e57568-c00a-406e-b2a3-33c7fb8392ce" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://thetestingworldapi.com/Help/Api/GET-api-technicalskills-id</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>id</con:entry>
+      </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

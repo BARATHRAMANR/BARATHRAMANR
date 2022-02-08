@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="02e1a665-0f6b-4da9-9b9e-39e73361265e" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="23 Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [23] located at [/api/users/23]</con:description>
+  <con:settings>
+    <con:setting id="02e1a665-0f6b-4da9-9b9e-39e73361265efileName">23-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Update" id="af16f226-fe61-4dd7-ad61-1bba7603f657">
+    <con:settings/>
+    <con:config service="API2" resourcePath="/api/users/23" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Update" id="e7381618-3039-4f8d-a816-79bee9fc7080" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:request>{
+    "name": "barath r",
+    "job": "zion resident"
+}</con:request>
+        <con:originalUri>https://reqres.in/api/users/23</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder/>
+        <con:environmentSpec>
+          <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

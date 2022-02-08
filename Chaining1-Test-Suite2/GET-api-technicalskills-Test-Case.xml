@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="f9205724-b9d0-4edf-834c-0e8f19c93f2f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GET-api-technicalskills Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [GET-api-technicalskills] located at [/api/studentsDetails]</con:description>
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">true</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="f9205724-b9d0-4edf-834c-0e8f19c93f2ffileName">GET-api-technicalskills-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Delete EMP TC07" id="44ef13c8-5fff-4a3e-91b4-de4ab183f3cc">
+    <con:settings/>
+    <con:config service="Chaining1" resourcePath="/api/studentsDetails/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Delete EMP TC07" id="ffd94f92-21e0-4c74-ba6f-b66c14ff84ff" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://thetestingworldapi.com/api/studentsDetails/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="0aebe1d4-be7b-4c1f-8688-c1f96d21e538" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${Properties 1#id}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Get per detail TC08" id="3895d5bf-d310-4877-832f-fb6865530562">
+    <con:settings/>
+    <con:config service="Chaining1" resourcePath="/api/studentsDetails/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Get per detail TC08" id="95e57568-c00a-406e-b2a3-33c7fb8392ce" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://thetestingworldapi.com/Help/Api/GET-api-technicalskills-id</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="2f3fb101-b737-47bc-b4de-39f722cd722f" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${Properties 1#id}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Get all details TC09" id="5a67033b-160f-44d5-976e-b441ef43ebf5">
+    <con:settings/>
+    <con:config service="Chaining1" resourcePath="/api/studentsDetails" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Get all details TC09" id="a5df4d1e-76f0-4b95-a5cc-2208e078a300" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://thetestingworldapi.com/Help/Api/GET-api-technicalskills</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

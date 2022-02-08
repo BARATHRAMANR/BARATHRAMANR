@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="823cf27d-0763-46da-b30b-3c939977982f" name="API2 Test Suite1" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test suite generated for the REST service [API2]</con:description>
+  <con:settings>
+    <con:setting id="823cf27d-0763-46da-b30b-3c939977982ffileName">API2-Test-Suite1</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testSuite>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="00523bd5-e510-4ae1-bde0-c3d561218734" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="DDT-File" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" zephyrTestName="" zephyrTestId="" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">true</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="00523bd5-e510-4ae1-bde0-c3d561218734fileName">DDT-File</con:setting>
+  </con:settings>
+  <con:testStep type="datasource" name="Data Source1" id="de422461-6459-4532-89d4-7d2afc8ab317">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="File">
+        <con:configuration>
+          <fileName>C:/ReadyAPI/data in file/xml file.txt</fileName>
+          <separator>,</separator>
+          <trim>true</trim>
+          <charset>Cp1252</charset>
+          <quotedValues>false</quotedValues>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>fname</con:property>
+      <con:property>lname</con:property>
+      <con:property>grade</con:property>
+      <con:property>dob</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Create emp TC01" id="8e76235a-0ecb-40b8-8ed9-ca354d297662">
+    <con:settings/>
+    <con:config service="Chaining1" resourcePath="/api/studentsDetails" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Create emp TC01" id="1e082a69-6e63-4db4-8fc0-3914f81638bb" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+        <con:request>{\r
+   "first_name" : "${Data Source1#fname}",\r
+   "middle_name" : "${Data Source1#lname}",\r
+   "last_name" : "${Data Source1#grade}",\r
+   "date_of_birth" : "${Data Source1#dob}"\r
+}</con:request>
+        <con:originalUri>http://thetestingworldapi.com/Help/Api/POST-api-studentsDetails</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="10b5ca4c-7e2c-4235-8bdb-e24b78580f6a" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>201</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder/>
+        <con:environmentSpec>
+          <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop" id="8690028c-a880-4879-a0ae-7814e97175fe">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Data Source1</dataSourceStep>
+      <targetStep>Create emp TC01</targetStep>
+      <discardResults>false</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>de422461-6459-4532-89d4-7d2afc8ab317</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>8e76235a-0ecb-40b8-8ed9-ca354d297662</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

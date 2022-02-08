@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="3371136d-215a-47f3-924e-02f80c9d2018" name="DDT - LOOP" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="3371136d-215a-47f3-924e-02f80c9d2018fileName">DDT---LOOP</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

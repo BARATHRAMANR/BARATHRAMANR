@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="GET-api-technicalskills" path="/api/studentsDetails" id="102c9394-4835-44ee-9433-d4068364b745" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="102c9394-4835-44ee-9433-d4068364b745fileName">GET-api-technicalskills</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="83ba8b98-e73b-4efc-86ff-6f2a9bcefbaf" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Get all details" id="a5df4d1e-76f0-4b95-a5cc-2208e078a300" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://thetestingworldapi.com/Help/Api/GET-api-technicalskills</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

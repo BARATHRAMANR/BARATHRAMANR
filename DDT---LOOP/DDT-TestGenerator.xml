@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="34bc4210-d328-4cc8-a4fc-ce12c8f2916f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DDT-TestGenerator" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="34bc4210-d328-4cc8-a4fc-ce12c8f2916ffileName">DDT-TestGenerator</con:setting>
+  </con:settings>
+  <con:testStep type="datasource" name="Data Source-dg" id="bf533f0b-ef17-4bbd-a376-41fc6c968809">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>3</generatorsTotalNumber>
+          <lastSelectedProperty>0</lastSelectedProperty>
+          <GeneratorType0>CITY</GeneratorType0>
+          <PropertyName0>fname</PropertyName0>
+          <repetitionCountfname>0</repetitionCountfname>
+          <repeatValuesfname>false</repeatValuesfname>
+          <GeneratorType1>COUNTRY</GeneratorType1>
+          <PropertyName1>lname</PropertyName1>
+          <repetitionCountlname>0</repetitionCountlname>
+          <repeatValueslname>false</repeatValueslname>
+          <GeneratorType2>STR</GeneratorType2>
+          <PropertyName2>grade</PropertyName2>
+          <repetitionCountgrade>0</repetitionCountgrade>
+          <repeatValuesgrade>false</repeatValuesgrade>
+          <PasswordDataGeneratorUseSpacesgrade>true</PasswordDataGeneratorUseSpacesgrade>
+          <PasswordDataGeneratorUsePunctuationMarksgrade>true</PasswordDataGeneratorUsePunctuationMarksgrade>
+          <PasswordDataGeneratorUseLettersgrade>true</PasswordDataGeneratorUseLettersgrade>
+          <PasswordDataGeneratorUseDigitsgrade>true</PasswordDataGeneratorUseDigitsgrade>
+          <PasswordDataGeneratorMaxCharacterCountgrade>10</PasswordDataGeneratorMaxCharacterCountgrade>
+          <PasswordDataGeneratorMinCharacterCountgrade>5</PasswordDataGeneratorMinCharacterCountgrade>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>fname</con:property>
+      <con:property>lname</con:property>
+      <con:property>grade</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Create emp TC01" id="72733048-d647-477a-9253-6175ec3d4981">
+    <con:settings/>
+    <con:config service="Chaining1" resourcePath="/api/studentsDetails" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Create emp TC01" id="1e082a69-6e63-4db4-8fc0-3914f81638bb" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+        <con:request>{\r
+   "first_name" : "${Data Source-dg#fname}",\r
+   "middle_name" : "${Data Source-dg#lname}",\r
+   "last_name" : "${Data Source-dg#grade}",\r\r
+}</con:request>
+        <con:originalUri>http://thetestingworldapi.com/Help/Api/POST-api-studentsDetails</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="10b5ca4c-7e2c-4235-8bdb-e24b78580f6a" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>201</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder/>
+        <con:environmentSpec>
+          <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop-dg" id="e61241c1-3f46-4bad-99b9-939a6b8acab9">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Data Source-dg</dataSourceStep>
+      <targetStep>DataGenerator</targetStep>
+      <discardResults>false</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

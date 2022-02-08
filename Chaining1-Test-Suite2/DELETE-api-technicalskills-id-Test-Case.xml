@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="54f6b2ab-2738-45fb-b8ec-c3cbb3bfe9f2" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DELETE-api-technicalskills-id Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [DELETE-api-technicalskills-id] located at [/api/studentsDetails/{id}]</con:description>
+  <con:settings>
+    <con:setting id="54f6b2ab-2738-45fb-b8ec-c3cbb3bfe9f2fileName">DELETE-api-technicalskills-id-Test-Case</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

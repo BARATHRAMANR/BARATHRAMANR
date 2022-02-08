@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="b63785df-6b1e-4dc4-824a-c8564b9cd932" name="Chaining1" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b63785df-6b1e-4dc4-824a-c8564b9cd932fileName">Chaining1</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="Chaining1.json">
+    <con:part>
+      <con:url>Chaining1.json</con:url>
+      <con:content>{"openapi":"3.0.1","info":{"title":"Chaining1","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/api/studentsDetails":{"post":{"description":"","requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}},"/api/studentsDetails/{id}":{"delete":{"description":"","requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}}}}</con:content>
+      <con:type>https://swagger.io/openapiv3/specification</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints>
+    <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+  </con:endpoints>
+  <con:environmentSpec>
+    <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:interface>

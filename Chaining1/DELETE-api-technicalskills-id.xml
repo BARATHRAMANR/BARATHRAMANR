@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="DELETE-api-technicalskills-id" path="api/studentsDetails/{id}" id="9685b6b0-7844-4e84-b179-10d9adba9aee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9685b6b0-7844-4e84-b179-10d9adba9aeefileName">DELETE-api-technicalskills-id</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter>
+      <con:name>id</con:name>
+      <con:value>935282</con:value>
+      <con:style>TEMPLATE</con:style>
+      <con:default>935282</con:default>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="Method 1" id="ab4f9b64-8790-4d42-96ff-c45a30872ad5" method="DELETE">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Delete EMP" id="ffd94f92-21e0-4c74-ba6f-b66c14ff84ff" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://thetestingworldapi.com/api/studentsDetails/</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>id</con:entry>
+      </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

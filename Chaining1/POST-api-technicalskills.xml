@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="POST-api-technicalskills" path="/api/studentsDetails" id="d7488604-ef28-47cd-b6e2-14dfff694c0a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d7488604-ef28-47cd-b6e2-14dfff694c0afileName">POST-api-technicalskills</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="798bad36-19ac-48d6-a304-28c997cae4e9" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Create emp" id="1e082a69-6e63-4db4-8fc0-3914f81638bb" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+      <con:request>{
+      "first_name" : "barath",
+      "middle_name" : "dada",
+      "last_name" : "ooooooooo",
+      "date_of_birth" : "01-01-2222"
+}</con:request>
+      <con:originalUri>http://thetestingworldapi.com/Help/Api/POST-api-studentsDetails</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder/>
+      <con:environmentSpec>
+        <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

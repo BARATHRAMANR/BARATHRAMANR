@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="66411823-0825-4348-aa3c-f84119cb156a" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GET-api-technicalskills-id Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [GET-api-technicalskills-id] located at [/api/studentsDetails/{id}]</con:description>
+  <con:settings>
+    <con:setting id="66411823-0825-4348-aa3c-f84119cb156afileName">GET-api-technicalskills-id-Test-Case</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="ec2c59f4-2960-4ee8-b756-536c9e904389" name="API2" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ec2c59f4-2960-4ee8-b756-536c9e904389fileName">API2</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="API2.json">
+    <con:part>
+      <con:url>API2.json</con:url>
+      <con:content>{"openapi":"3.0.1","info":{"title":"API2","version":"1.0.0"},"servers":[{"url":"/"}],"paths":{"/api/login":{"post":{"requestBody":{"content":{"application/json":{"example":"{\n    \"email\": \"eve.holt@reqres.in\",\n    \"password\": \"cityslicka\"\n}"}}},"responses":{"default":{"description":"Default response"}}}},"/api/users":{"description":"","get":{"description":"","parameters":[{"name":"page","in":"query","required":true,"schema":{"type":"string"}}],"responses":{"default":{"description":"Default response"}}},"post":{"description":"","requestBody":{"content":{"application/json":{"example":"{\n    \"name\": \"barath r\",\n    \"job\": \"leader1234\"\n}"}}},"responses":{"default":{"description":"Default response"}}}},"/api/users/23":{"description":"","put":{"description":"","requestBody":{"content":{"application/json":{"example":"{\n    \"name\": \"barath r\",\n    \"job\": \"zion resident\"\n}"}}},"responses":{"default":{"description":"Default response"}}}},"/api/users/33":{"description":"","delete":{"description":"","requestBody":{"content":{"application/json":{}}},"responses":{"default":{"description":"Default response"}}}}}}</con:content>
+      <con:type>https://swagger.io/openapiv3/specification</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints/>
+  <con:environmentSpec>
+    <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:interface>

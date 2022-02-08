@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="be46222c-aa41-418e-961f-d60631e05882" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="PUT-api-technicalskills-id Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [PUT-api-technicalskills-id] located at [/api/studentsDetails/{id}]</con:description>
+  <con:settings>
+    <con:setting id="be46222c-aa41-418e-961f-d60631e05882fileName">PUT-api-technicalskills-id-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Update EMP TC04" id="8ab32099-262e-448d-bf0a-03b0d99cdfbd">
+    <con:settings/>
+    <con:config service="Chaining1" resourcePath="/api/studentsDetails/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Update EMP TC04" id="cde398d1-8889-48d7-969a-f170b95b24da" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+        <con:request>{
+  "id": ${Properties 1#id},
+  "first_name" : "r barath",
+  "middle_name" : "raman",
+  "last_name" : "R",
+  "date_of_birth" : "01-01-00222"
+}</con:request>
+        <con:originalUri>http://thetestingworldapi.com/api/studentsDetails/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="a2c9890e-7d6c-4cee-ba20-c43d62acd786" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${Properties 1#id}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Get per detail TC05" id="03ba7ac3-11ef-48a3-9568-7926aaaeec85">
+    <con:settings/>
+    <con:config service="Chaining1" resourcePath="/api/studentsDetails/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Get per detail TC05" id="95e57568-c00a-406e-b2a3-33c7fb8392ce" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://thetestingworldapi.com/Help/Api/GET-api-technicalskills-id</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="50559a46-c6c7-40e8-9393-48f5628a3507" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${Properties 1#id}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Get all details TC06" id="c761e39b-48cb-4690-8733-061d20088d5b">
+    <con:settings/>
+    <con:config service="Chaining1" resourcePath="/api/studentsDetails" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Get all details TC06" id="a5df4d1e-76f0-4b95-a5cc-2208e078a300" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://thetestingworldapi.com/Help/Api/GET-api-technicalskills</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="8e4aec48-bff9-4cd1-870f-cfa278680e98" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

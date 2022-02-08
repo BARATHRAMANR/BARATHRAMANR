@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="b0304f36-381b-4678-980a-a53db3fc328b" name="Chaining1 Test Suite2" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test suite generated for the REST service [Chaining1]</con:description>
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">true</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="b0304f36-381b-4678-980a-a53db3fc328bfileName">Chaining1-Test-Suite2</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

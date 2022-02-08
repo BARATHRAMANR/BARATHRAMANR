@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="users" path="/api/users" id="db634137-1f16-48ed-8f30-5b2806e45b6d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="db634137-1f16-48ed-8f30-5b2806e45b6dfileName">users</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:resource name="23" path="23" id="02cd7af5-7e4a-4523-acd8-b4f70d68220c">
+    <con:settings/>
+    <con:parameters/>
+    <con:method name="Method 1" id="dcb2ba1a-a203-4305-8eba-47d07459eca6" method="PUT">
+      <con:settings/>
+      <con:parameters/>
+      <con:request name="Update" id="e7381618-3039-4f8d-a816-79bee9fc7080" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:request>{
+    "name": "barath r",
+    "job": "zion resident"
+}</con:request>
+        <con:originalUri>https://reqres.in/api/users/23</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder/>
+        <con:environmentSpec>
+          <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:resource name="33" path="33" id="8ee3ce46-95ae-4931-9c15-e6a9db7ea518">
+    <con:settings/>
+    <con:parameters/>
+    <con:method name="Method 1" id="552dca6c-959e-4395-bb76-1b0ba1637c5b" method="DELETE">
+      <con:settings/>
+      <con:parameters/>
+      <con:request name="Delete" id="b48db305-ef57-4ad7-9ad2-f1edc14e00e8" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:request/>
+        <con:originalUri>https://reqres.in/api/users/33</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder/>
+        <con:environmentSpec>
+          <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:method name="User" id="9ec69eb9-0bf8-4b62-adba-78b860229f67" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>page</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="List User" id="efff3931-cfec-4982-a21b-de07d2484a84" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:request/>
+      <con:originalUri>https://reqres.in/api/users</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="page" value=""/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>page</con:entry>
+      </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Single User" id="73ee6d8a-d770-46f3-9d5d-bd21145414d3" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:request/>
+      <con:originalUri>https://reqres.in/api/users</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="page" value="1"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>page</con:entry>
+      </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:method name="Method 2" id="78b05218-ee0d-470a-ad64-181db5ec12a1" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Create" id="141722f7-0a44-460f-9a79-616b1bc14caa" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:request>{
+    "name": "barath r",
+    "job": "leader1234"
+}</con:request>
+      <con:originalUri>https://reqres.in/api/users</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder/>
+      <con:environmentSpec>
+        <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

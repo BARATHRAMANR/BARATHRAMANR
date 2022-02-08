@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="09a6ce86-49c9-497a-a510-19e56dc27675" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="login Test Case" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>The test case generated for the REST resource [login] located at [/api/login]</con:description>
+  <con:settings>
+    <con:setting id="09a6ce86-49c9-497a-a510-19e56dc27675fileName">login-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="login" id="c2de7e57-fbba-42f6-a263-645308f59a27">
+    <con:settings/>
+    <con:config service="API2" resourcePath="/api/login" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="login" id="b778964e-7c52-4ab5-8660-07bc4dfea706" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:request>{
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+}</con:request>
+        <con:originalUri>https://reqres.in/api/login</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

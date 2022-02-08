@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="1d9ee057-c608-42cb-92e4-68e0ca523387" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DDT-Grid" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1d9ee057-c608-42cb-92e4-68e0ca523387fileName">DDT-Grid</con:setting>
+  </con:settings>
+  <con:testStep type="datasource" name="Data Source Grid" id="9f35a54d-54c7-4b49-a3e7-36a889ba9bd5">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Grid">
+        <con:configuration>
+          <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">false</con:entry></xml-fragment>]]></check>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">barath</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">haii</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">01</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1-1-1111</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">hari</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">r u</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">02</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1-1-1112</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">ram</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">prasad</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">03</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1-1-1113</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">hlooo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">haii</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">01</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1-1-1111</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">how</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">r u</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">02</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1-1-1112</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">hari</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">prasad</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">03</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1-1-1113</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">hlooo</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">haii</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">01</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1-1-1111</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">how</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">r u</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">02</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1-1-1112</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">hari</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">prasad</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">03</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">1-1-1113</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <row><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/><con:entry xmlns:con="http://eviware.com/soapui/config"/></xml-fragment>]]></row>
+          <recognizeAsPlainText>false</recognizeAsPlainText>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>fname</con:property>
+      <con:property>lname</con:property>
+      <con:property>grade</con:property>
+      <con:property>dob</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Create emp TC01" id="b91ced1f-2af6-4106-ada3-f18818ba7a32">
+    <con:settings/>
+    <con:config service="Chaining1" resourcePath="/api/studentsDetails" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Create emp TC01" id="1e082a69-6e63-4db4-8fc0-3914f81638bb" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://thetestingworldapi.com</con:endpoint>
+        <con:request>{\r
+   "first_name" : "${Data Source Grid#fname}",\r
+   "middle_name" : "${Data Source Grid#lname}",\r
+   "last_name" : "${Data Source Grid#grade}",\r
+   "date_of_birth" : "${Data Source Grid#dob}"\r
+}</con:request>
+        <con:originalUri>http://thetestingworldapi.com/Help/Api/POST-api-studentsDetails</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="10b5ca4c-7e2c-4235-8bdb-e24b78580f6a" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>201</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:parameterOrder/>
+        <con:environmentSpec>
+          <con:entry environmentId="1edd1dd5-7f74-43e2-b538-4bdae9af5b24">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="transfer" name="PropertyTransfer 1" id="b78abbd4-aca6-4714-aa3b-913aa5ec961c">
+    <con:settings/>
+    <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true">
+        <con:name>id</con:name>
+        <con:sourceType>Response</con:sourceType>
+        <con:sourceStep>Create emp TC01</con:sourceStep>
+        <con:sourcePath>$['id']</con:sourcePath>
+        <con:targetType>id</con:targetType>
+        <con:targetStep>Data Sink</con:targetStep>
+        <con:targetPath/>
+        <con:type>JSONPATH</con:type>
+        <con:upgraded>true</con:upgraded>
+      </con:transfers>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="Data Sink" id="865163cd-5e1b-4986-944f-38c2adfa5f0e">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="Excel">
+        <con:configuration>
+          <file/>
+          <outfile>C:/ReadyAPI/data in file/excel sink/outputexcel.xlsx</outfile>
+          <worksheet>sheet1</worksheet>
+          <cell>A1</cell>
+          <evaluateFormulas>false</evaluateFormulas>
+          <append>false</append>
+        </con:configuration>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>id</con:name>
+          <con:value>937116</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop-grid" id="a3853f4d-f20d-4364-8c40-e10efbf6b13e">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Data Source Grid</dataSourceStep>
+      <targetStep>Create emp TC01</targetStep>
+      <discardResults>false</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
